@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300i,400,700&display=swap');
 
 :root {
-  --white: #C9C1AC;
+  --mainWhite: #C9C1AC;
   --mainRed: #D3325F;
   --mainBlack: #222;
   --primaryColor:#F09D51;
   --mainGrey: #ECECEC;
+  --mainTransition: all 1s ease;
 
 }
 
@@ -17,8 +18,13 @@
 
 body {
   color: var(--mainBlack);
-  background: var(--white);
+  background: var(--mainWhite);
   font-family: 'Roboto Mono', monospace !important;
+  background-image: url(../images/bcg-1.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .info {
@@ -60,12 +66,12 @@ body {
 }
 
 #header small{
-  color: var(--white) !important;
+  color: var(--mainWhite) !important;
 }
 
 .banner h1 {
-  border-top: 8px dotted var(--white);
-  border-bottom: 8px dotted var(--white);
+  border-top: 8px dotted var(--mainWhite);
+  border-bottom: 8px dotted var(--mainWhite);
   animation: fromLeft;
   animation-duration: 4s;
   animation-delay: 2s;
@@ -128,7 +134,7 @@ body {
   position: absolute;
   bottom: 5%;
   left: 50%;
-  background: var(--white);
+  background: var(--mainWhite);
   border-radius: 10px;
   transition: all .2s ease;
   animation: fromBottom;
@@ -137,7 +143,7 @@ body {
 }
 
 .header-link:hover {
-  color: var(--white) !important;
+  color: var(--mainWhite) !important;
   background: var(--mainRed);
 
 }
@@ -158,18 +164,49 @@ body {
 
 
 /* -------- menu items section -------*/
-/*
-.item-img {
-  min-height: 400px !important;
+
+.item-container {
+  position: relative;
+  /* for the link */
+  overflow: hidden;
+  background: linear-gradient(rgb(0,0,0), rgb(0,0,0));
+  transition: all 2s ease;
 }
 
-@media only screen
-  and (min-device-width: 320)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio;2) {
-    .item-img {
-      min-height: auto !important;
-    }
-  }
+.item-img{
+  transition: all 1s ease;
+}
 
-  */
+.item-container:hover .item-img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--mainRed);
+  font-size: 2rem;
+  border-top: 3px solid var(--mainRed);
+  border-bottom: 3px solid var(--mainRed);
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.item-container:hover .item-link {
+  opacity: 1;
+}
+
+.item-link:hover {
+  color:var(--mainWhite);
+  background: var(--mainRed);
+  border: 3px var(--mainRed);
+}
+
+.item-container:hover {
+  outline: 10px solid var(--mainRed);
+  outline-offset: -0.8rem;
+}
+/* -------- end of menu items section -------*/
