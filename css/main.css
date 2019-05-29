@@ -155,3 +155,21 @@ body {
 
   }
 }
+
+
+/* -------- menu items section -------*/
+/*
+.item-img {
+  min-height: 400px !important;
+}
+
+@media only screen
+  and (min-device-width: 320)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio;2) {
+    .item-img {
+      min-height: auto !important;
+    }
+  }
+
+  */

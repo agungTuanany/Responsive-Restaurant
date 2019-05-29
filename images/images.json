@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "suhsi-imma 1",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/sushi-1.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "sushi-imma 2",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/sushi-2.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "sushi-imma 3",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/sushi-3.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "sushi-imma 4",
+        "price": 22.99,
+        "image": { "fields": { "file": { "url": "./images/sushi-4.jpeg" } } }
+      }
+    }
+  ]
+}
