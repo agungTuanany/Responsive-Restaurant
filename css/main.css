@@ -61,6 +61,26 @@ body {
 .banner h1 {
   border-top: 8px dotted var(--white);
   border-bottom: 8px dotted var(--white);
+  animation: fromLeft;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* animation css */
+@keyframes fromLeft {
+  0  {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .main-btn {
@@ -75,6 +95,29 @@ body {
   background: var(--mainRed);
 }
 
+.dapur-btn {
+  animation: fromRight;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+}
+/* animation css */
+@keyframes fromRight{
+  0  {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .header-link {
   display: inline-block;
   position: absolute;
@@ -83,10 +126,27 @@ body {
   background: var(--white);
   border-radius: 10px;
   transition: all .2s ease;
+  animation: fromBottom;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .header-link:hover {
   color: var(--white) !important;
   background: var(--mainRed);
 
+}
+
+/* bounce Animation */
+@keyframes fromBottom {
+  0{
+    transform: translateY(-100px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px)
+
+  }
 }
