@@ -41,3 +41,52 @@ body {
 .info a:hover{
   color: var(--mainBlack) !important;
 }
+
+/* -------- header section -------*/
+
+#header {
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/head-sushi.jpeg) center/cover fixed no-repeat;
+  min-height: calc(100vh - 94px);
+  position: relative;
+}
+
+.height-90 {
+   min-height: calc(100vh - 94px);
+}
+
+#header small{
+  color: var(--white) !important;
+}
+
+.banner h1 {
+  border-top: 8px dotted var(--white);
+  border-bottom: 8px dotted var(--white);
+}
+
+.main-btn {
+  color: var(--primaryColor)!important;
+  font-size: 2rem;
+  border: 2px solid var(--mainRed) !important;
+  transition: all .3s ease-in-out;
+}
+
+.main-btn:hover {
+  border: 5px solid var(--mainBlack);
+  background: var(--mainRed);
+}
+
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: var(--white);
+  border-radius: 10px;
+  transition: all .2s ease;
+}
+
+.header-link:hover {
+  color: var(--white) !important;
+  background: var(--mainRed);
+
+}
