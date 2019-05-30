@@ -286,5 +286,17 @@ body {
 .about-picture:hover .about-image:not(:hover) {
   opacity: 0.5;
 }
-
 /* -------- end of about section -------*/
+
+/* -------- reviews section -------*/
+
+.review-item {
+  background: rgba(255,255,255,0.7);
+  clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%);
+}
+.review-img {
+  width: 150px;
+}
+
+
+/* -------- end of reviews section -------*/
