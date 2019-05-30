@@ -210,3 +210,23 @@ body {
   outline-offset: -0.8rem;
 }
 /* -------- end of menu items section -------*/
+
+/* -------- menu list section -------*/
+#menu {
+  background: linear-gradient(rgba(255,255,255, 0.7), rgba(255,255,255,0.7)), url(../images/banner-menu.jpeg) center/cover fixed no-repeat;
+}
+
+.special {
+  border: var(--mainRed) 3px solid;
+  position: relative;
+}
+
+.special-text {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: var(--mainRed);
+  padding: 0 0.4rem;
+}
+
+/* -------- end of menu list section -------*/
