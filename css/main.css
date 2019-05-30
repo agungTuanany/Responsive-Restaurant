@@ -230,3 +230,61 @@ body {
 }
 
 /* -------- end of menu list section -------*/
+
+/* -------- about section -------*/
+.about-us {
+  color: var(--mainRed) !important;
+}
+
+.about-pictures {
+  position: relative;
+}
+
+.about-image {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transition: all 2s ease;
+  opacity: 0.9;
+}
+
+.img-1 {
+  left: 0;
+  top: 0;
+}
+
+.img-2 {
+  left: 20%;
+  top:20%;
+  z-index: 10;
+}
+
+.img-3 {
+  left: 40%;
+  top: 45%;
+  z-index: 20;
+}
+
+.img-4 {
+  left: 40%;
+  top: 0%;
+}
+
+.img-5 {
+  left: 0%;
+  top: 45%;
+}
+
+.about-image:hover {
+  outline: 10px solid var(--mainRed);
+  outline-offset: 0.8rem;
+  transform: scale(1.3) rotate(20deg);
+  z-index: 30;
+  opacity: 1;
+}
+
+.about-picture:hover .about-image:not(:hover) {
+  opacity: 0.5;
+}
+
+/* -------- end of about section -------*/
