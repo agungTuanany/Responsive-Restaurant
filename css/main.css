@@ -162,6 +162,79 @@ body {
   }
 }
 
+/* -------- navbar section -------*/
+.navbar {
+  background: var(--mainWhite);
+  padding: 20px 20px;
+  transition: all .1s ease;
+}
+
+.navbar-background {
+  padding: 5px 20px;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  transition: all .1s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--primaryColor) !important;
+}
+
+.nav-link {
+  color: var(--mainBlack);
+  text-decoration: none;
+  transition: all .2s ease;
+  font-size: 1.3rem;
+}
+
+.nav-link:hover {
+  color: var(--mainRed);
+}
+
+.nav-btn {
+  background: transparent;
+  color: var(--mainRed) !important;
+  border: 2px solid var(--mainRed) !important;
+  font-size: 1.3rem;
+  transition: all .2s ease;
+}
+
+.nav-btn:hover {
+  color: var(--primaryColor) !important;
+  border: 2px solid var(--mainBlack) !important;
+  transform: rotate(10deg);
+}
+
+.toggler-btn {
+  border: 2px solid var(--mainRed);
+  padding: 5px;
+  transition: all .2s ease;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: var(--mainRed);
+  transition: all .5s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(5px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+
+
+/* -------- end of navbar section -------*/
 
 /* -------- menu items section -------*/
 
