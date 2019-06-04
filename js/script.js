@@ -1,12 +1,6 @@
 /* JQuery */
 $(document).ready(function () {
 
-  // ripples
-  $('#header, .info').ripples({
-    dropRadius: 1,
-    perturbance:0.01,
-  });
-
   //magnific popup
 
   $('.parent-container').magnificPopup({

@@ -311,3 +311,57 @@ body {
   transform: translateY(-5px);
 }
 /* -------- end of team section -------*/
+
+/* -------- contact section -------*/
+.height-60 {
+  min-height: 60vh;
+}
+
+#contact .card {
+  background: rgba(0,0,0,0.3);
+  transition: all .2s ease;
+}
+
+#contact .card:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+#contact .card-header {
+  color: var(--mainRed);
+}
+
+#contact .input-group-text {
+  background: var(--mainRed);
+  border-color: var(--mainRed);
+  color: var(--mainBlack);
+}
+
+#contact .card input {
+  color: var(--primaryColor);
+}
+
+#contact .card input::placeholder {
+  color: var(--mainBlack);
+}
+
+.contact-btn {
+  color: var(--primaryColor);
+  border-color: var(--mainRed);
+  background: transparent;
+  transition: all .2s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: var(--mainRed);
+  color: var(--primaryColor);
+}
+
+
+
+
+
+
+
+/* -------- end of contact section -------*/
+
+
