@@ -355,13 +355,20 @@ body {
   background: var(--mainRed);
   color: var(--primaryColor);
 }
-
-
-
-
-
-
-
 /* -------- end of contact section -------*/
+
+/* -------- footer section -------*/
+#back-to-top {
+  background: var(--PrimaryColor);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+}
+/* -------- end of footer section -------*/
 
 
